@@ -27,8 +27,6 @@ local autocmd = vim.api.nvim_create_autocmd
 
 -- vim.opt.colorcolumn = "80"
 
--- vim.g.mapleader = " "
-
 -- --
 -- vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move blocks of highlighted
 
@@ -41,17 +39,6 @@ local autocmd = vim.api.nvim_create_autocmd
 
 -- vim.keymap.set("n", "<C-n>", "<CMD>NvimTreeToggle<CR>")
 -- vim.keymap.set("n", "<leader>e", "<CMD>NvimTreeFocus<CR>")
-
--- vim.keymap.set("n","<leader>/",
---   function()
---     require("Comment.api").toggle.linewise.current()
---   end
--- )
--- vim.keymap.set("v","<leader>/",
---   function()
---     require("Comment.api").toggle.linewise(vim.fn.visualmode())
---   end
--- )
 
 -- vim.keymap.set("n", "<leader>q",
 --   function()

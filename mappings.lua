@@ -7,7 +7,7 @@ M.general = {
   },
 }
 
--- more keybinds!
+-- vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move blocks of highlighted
 
 return M
 
