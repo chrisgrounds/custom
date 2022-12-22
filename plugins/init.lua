@@ -15,4 +15,11 @@ return {
   ["kyazdani42/nvim-tree.lua"] = {
     override_options = overrides.nvimtree,
   },
+
+  ["neovim/nvim-lspconfig"] = {
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.plugins.lspconfig"
+    end,
+  },
 }

@@ -5,9 +5,11 @@ M.general = {
     -- [";"] = { ":", "command mode", opts = { nowait = true } },
     ["\\\\"] = { "<cmd> Telescope find_files<CR>", "file finder" },
   },
+  v = {
+    ["J"] = { "<cmd>m '>+1<CR>gv=gv", "move block down" },
+    ["K"] = { "<cmd>m '<-2<CR>gv=gv", "move block up" },
+  }
 }
-
--- vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move blocks of highlighted
 
 return M
 
