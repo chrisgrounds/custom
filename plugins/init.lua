@@ -22,4 +22,12 @@ return {
       require "custom.plugins.lspconfig"
     end,
   },
+
+  ["akinsho/toggleterm.nvim"] = {
+    cmd = "ToggleTerm",
+    module = "custom.plugins.toggleterm",
+    config = function()
+      require("custom.plugins.toggleterm").setup()
+    end,
+  },
 }
