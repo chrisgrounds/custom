@@ -16,6 +16,13 @@ return {
     override_options = overrides.nvimtree,
   },
 
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function()
+      require "custom.plugins.null-ls"
+    end,
+  },
+
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
@@ -54,7 +61,9 @@ return {
     end,
   },
 
-  ["simrat39/rust-tools.nvim"] = {},
+  ["simrat39/rust-tools.nvim"] = {
+    after = "nvim-lspconfig",
+  },
 
   ["akinsho/toggleterm.nvim"] = {
     cmd = "ToggleTerm",

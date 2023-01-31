@@ -22,6 +22,9 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "deno",
+
+    "rust-analyzer",
+    "rustfmt",
   },
 }
 
