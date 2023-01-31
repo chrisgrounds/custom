@@ -38,7 +38,6 @@ M.setup = function()
       hide_numbers = true,
       shade_terminals = false,
       highlight = {},
-
    }
 end
 
