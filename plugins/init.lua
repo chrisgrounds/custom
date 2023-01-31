@@ -1,11 +1,5 @@
 local overrides = require "custom.plugins.overrides"
 
-
-local function on_attach(client, buffer)
-  -- This callback is called when the LSP is atttached/enabled for this buffer
-  -- we could set keymaps related to LSP, etc here.
-end
-
 return {
   ["goolord/alpha-nvim"] = { disable = false }, -- enables dashboard
 
@@ -21,8 +15,6 @@ return {
   ["kyazdani42/nvim-tree.lua"] = {
     override_options = overrides.nvimtree,
   },
-
-  ["simrat39/rust-tools.nvim"] = {},
 
   ["neovim/nvim-lspconfig"] = {
     config = function()
@@ -46,7 +38,7 @@ return {
         -- see https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#rust_analyzer
         server = {
           -- on_attach is a callback called when the language server attachs to the buffer
-          on_attach = on_attach,
+          on_attach = require("plugins.configs.lspconfig").on_attach,
           settings = {
             -- to enable rust-analyzer settings visit:
             -- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
@@ -61,6 +53,8 @@ return {
       })
     end,
   },
+
+  ["simrat39/rust-tools.nvim"] = {},
 
   ["akinsho/toggleterm.nvim"] = {
     cmd = "ToggleTerm",
