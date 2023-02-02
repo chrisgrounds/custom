@@ -25,6 +25,8 @@ M.mason = {
 
     "rust-analyzer",
     "rustfmt",
+
+    "pyright",
   },
 }
 

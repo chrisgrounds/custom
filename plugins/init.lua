@@ -44,4 +44,6 @@ return {
       require("custom.plugins.toggleterm").setup()
     end,
   },
+
+  ["github/copilot.vim"] = {}
 }
