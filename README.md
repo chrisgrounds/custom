@@ -10,3 +10,4 @@ nvim --headless +PackerSync +qall && nvim --headless +PackerCompile +qall
 ## Dependencies
 
 - [lazygit](https://github.com/jesseduffield/lazygit)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
